@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="static/css/main.css" rel="stylesheet">
+        <title>DNM - International music database</title>
+    </head>
+    <body>
+        <div id="main-header">
+            <div id='logo-wrapper'></div>
+            <div id="search-box-wrapper">
+                <input class="search-box" aria-label="Search albums, artists, genres" type="text" placeholder="Search albums, artists, genres">
+            </div>
+            <div id="nav-bar-wrapper">
+                <ul id="main-nav-bar">
+                    <li class="nav-button">
+                        <a class='button-label'>Genres</a>
+                    </li>
+                    <li class="nav-button">
+                        <a class='button-label'>Trending</a>
+                    </li>
+                    <li class="nav-button">
+                        <a class='button-label'>Charts</a>
+                    </li>
+                    <li class="nav-button">
+                        <a class='button-label'>Blog</a>
+                    </li>
+                    <li class="nav-button">
+                        <a class='button-label'>My Account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
